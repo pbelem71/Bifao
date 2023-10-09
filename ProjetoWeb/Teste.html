@@ -2,27 +2,38 @@
 <html>
 <head>
     <title>Menu do Restaurante</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: rgb(201, 197, 177);
+            background-color: rgb(172, 172, 170);
         }
 
         .opcao-menu {
-            border: 1px solid #ccc;
+            border: 15px solid #ccc;
             padding: 10px;
-            margin: 10px;
+            margin: 100px;
             text-align: center;
-            background-color: #fff;
+            background-color: #f2f2f2;
             border-radius: 8%;
+            font-size: 20px;
+            width: 10% 10%;
+            font-family: 'Reboto', sans-serif;
         }
 
         .opcao-menu img {
-            max-width: 100%;
+            width: 10% 10%;
+            border: 15px solid #ccc;
+            border-radius: 8%;
         }
 
         #menu-escolhido {
             background-color: #f2f2f2;
-            padding: 20px;
+            border: 15px solid #ccc;
+            padding: 30px;
+            border-radius: 30px 40px;
+            font-size: 25px;
+            width: 10% 2%;
+            font-family: 'Reboto', sans-serif;
         }
 
         .item-menu {
@@ -30,18 +41,31 @@
             justify-content: space-between;
             align-items: center;
             padding: 10px;
-            border: 1px solid #ccc;
-            margin: 5px 0;
+            border: 15px solid #ccc;
+            border-radius: 30px 40px;
+            margin: 5px 5px;
             background-color: #fff;
         }
 
         .item-menu button {
-            background-color: #ff5733;
-            color: #fff;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
+        background-color: #ff5733;
+        color: #000000;
+        border: 2px solid #c40808;
+        padding: 5px 10px;
+        cursor: pointer;
+        margin-top: 10px; 
+        border-radius: 8px; 
+    }
+
+    .botaoadicionar {
+        background-color: #32b821;
+        color: #000000;
+        border: 2px solid #62e20c;
+        padding: 5px 10px;
+        cursor: pointer;
+        margin-top: 10px; 
+        border-radius: 8px;
+     }
     </style>
 </head>
 <body>
@@ -50,115 +74,131 @@
     </section>
 
     <div class="opcao-menu">
-        <h3>Dados de tapioca</h3>
+        <h1>Dados de tapioca</h1>
         <img src="dadinho-de-tapioca-com-queijo-de-coalho-1-840x480.jpeg" alt="dados de tapioca">
         <p>Tapioca grelhada é uma tapioca tradicional grelhada na frigideira após ser recheada.
             Fica crocante por fora e macia por dentro, podendo ser doce ou salgada</p>
-        <button onclick="adicionarAoMenu('Dados de tapioca')">Adicionar</button>
+        <button class="botaoadicionar" onclick="adicionarAoMenu('Dados de tapioca','dadinho-de-tapioca-com-queijo-de-coalho-1-840x480.jpeg')">Adicionar</button>
     </div>
 
     <div class="opcao-menu">
-        <h3>Aneis de lula empanados</h3>
+        <h1>Aneis de lula empanados</h1>
         <img src="aneis-de-lula-empanados-2-840x480.jpeg" alt="Aneis de lula empanados">
         <p>Anéis de lula empanados são um petisco irresistível, 
             onde anéis de lula são revestidos com uma camada crocante e dourada de massa antes de serem fritos</p>
-        <button onclick="adicionarAoMenu('Aneis de lula empanados')">Adicionar</button>
+        <button class="botaoadicionar
+" onclick="adicionarAoMenu('Aneis de lula empanados','aneis-de-lula-empanados-2-840x480.jpeg')">Adicionar</button>
     </div>
 
     <div class="opcao-menu">
-        <h3>Batatas Fritas</h3>
+        <h1>Batatas Fritas</h1>
         <img src="batata-frita-na-air-fryer-2-840x480.jpeg" alt="Batatas Fritas">
         <p>Batatas fritas são tiras de batata cortadas finamente,
              fritas até ficarem douradas e crocantes, sendo um acompanhamento popular em todo o mundo</p>
-        <button onclick="adicionarAoMenu('Batatas Fritas')">Adicionar</button>
+        <button class="botaoadicionar
+" onclick="adicionarAoMenu('Batatas Fritas','batata-frita-na-air-fryer-2-840x480.jpeg')">Adicionar</button>
     </div>
 
     <div class="opcao-menu">
-        <h3>Bifao ao molho</h3>
+        <h1>Bifao ao molho</h1>
         <img src="bifes-de-contra-file-com-molho-840x480.jpeg" alt="Bifao ao molho">
         <p>Bife ao molho é um prato suculento e saboroso, 
             consistindo de um bife grelhado coberto com um molho rico e aromático</p>
-        <button onclick="adicionarAoMenu('Bifao ao molho')">Adicionar</button>
+        <button class="botaoadicionar
+" onclick="adicionarAoMenu('Bifao ao molho', 'bifes-de-contra-file-com-molho-840x480.jpeg')">Adicionar</button>
     </div>
 
     <div class="opcao-menu">
-        <h3>Camarao grelhado</h3>
+        <h1>Camarao grelhado</h1>
         <img src="camarao-grelhado-ao-molho-de-ervas-1-840x480.jpeg" alt="Camarao grelhado">
         <p>Camarão grelhado é um prato de frutos do mar delicioso, 
             no qual camarões são grelhados até ficarem levemente caramelizados e cheios de sabor</p>
-        <button onclick="adicionarAoMenu('Camarao grelhado')">Adicionar</button>
+        <button class="botaoadicionar
+" onclick="adicionarAoMenu('Camarao grelhado','camarao-grelhado-ao-molho-de-ervas-1-840x480.jpeg')">Adicionar</button>
     </div>
 
     <div class="opcao-menu">
-        <h3>Peito de frango</h3>
+        <h1>Peito de frango</h1>
         <img src="peito-de-frango-na-airfryer-840x480.jpeg" alt="Peito de frango">
         <p>Um prato baseado em peito de frango pode ser um suculento frango grelhado servido
              com um molho de ervas frescas, proporcionando um equilíbrio perfeito entre sabor e leveza</p>
-        <button onclick="adicionarAoMenu('Peito de frango')">Adicionar</button>
+        <button class="botaoadicionar
+" onclick="adicionarAoMenu('Peito de frango','peito-de-frango-na-airfryer-840x480.jpeg')">Adicionar</button>
     </div>
 
     <div class="opcao-menu">
-        <h3>File a parmegiana</h3>
+        <h1>File a parmegiana</h1>
         <img src="contrafile-a-parmegiana-840x480.jpeg" alt="File a parmegiana">
         <p>
             Filé à parmegiana é um prato consistindo de um filé de carne empanado,
              coberto com molho de tomate e queijo derretido, assado até ficar gratinado e 
              irresistivelmente saboroso</p>
-        <button onclick="adicionarAoMenu('File a parmegiana')">Adicionar</button>
+        <button class="botaoadicionar
+" onclick="adicionarAoMenu('File a parmegiana','contrafile-a-parmegiana-840x480.jpeg')">Adicionar</button>
     </div>    
 
     <div class="opcao-menu">
-        <h3>Macarrao com frutos do mar</h3>
+        <h1>Macarrao com frutos do mar</h1>
         <img src="macarrao-com-frutos-do-mar-1-840x480.jpeg" alt="Macarrao com frutos do mar">
         <p>Macarrão com frutos do mar é um prato que combina massas com frutos do mar frescos e um molho
              saboroso à base de tomate e ervas</p>
-        <button onclick="adicionarAoMenu('Macarrao com frutos do mar')">Adicionar</button>
+        <button class="botaoadicionar
+" onclick="adicionarAoMenu('Macarrao com frutos do mar','macarrao-com-frutos-do-mar-1-840x480.jpeg')">Adicionar</button>
     </div>
 
     <div class="opcao-menu">
-        <h3>Sorvete</h3>
+        <h1>Sorvete</h1>
         <img src="sorvete-de-iogurte-grego-facil-840x480.jpeg" alt="Sorvete">
         <p>Sorvete é uma sobremesa gelada e cremosa, adorada por seu sabor doce e variados sabores,
              sendo perfeita para refrescar em dias quentes</p>
-        <button onclick="adicionarAoMenu('Sorvete')">Adicionar</button>
+        <button class="botaoadicionar
+" onclick="adicionarAoMenu('Sorvete','sorvete-de-iogurte-grego-facil-840x480.jpeg')">Adicionar</button>
     </div>
 
     <div class="opcao-menu">
-        <h3>Churros</h3>
+        <h1>Churros</h1>
         <img src="churros-2-840x480.jpeg" alt="Churros recheados">
         <p>Churros são deliciosos snacks de massa frita, crocantes por fora e macios por dentro,
              frequentemente polvilhados com açúcar e canela, e servidos com molhos para mergulhar,
               sendo um quitute popular em muitas culturas</p>
-        <button onclick="adicionarAoMenu('Churros')">Adicionar</button>
+        <button class="botaoadicionar
+" onclick="adicionarAoMenu('Churros','churros-2-840x480.jpeg')">Adicionar</button>
     </div>
         
     <div class="opcao-menu">
-        <h3>Pudim</h3>
+        <h1>Pudim</h1>
         <img src="pudim-de-pao-com-leite-condensado-e-passas-840x480.jpeg" alt="Pudim">
         <p>Pudim é uma sobremesa de consistência suave e doçura agradável, geralmente à base de leite,
              açúcar, ovos e saborizado com baunilha ou caramelo</p>
-        <button onclick="adicionarAoMenu('Pudim')">Adicionar</button>
+        <button class="botaoadicionar
+" onclick="adicionarAoMenu('Pudim','pudim-de-pao-com-leite-condensado-e-passas-840x480.jpeg')">Adicionar</button>
     </div>
 
     <script>
-        function adicionarAoMenu(item) {
-            const menuEscolhido = document.getElementById('menu-escolhido');
-            const novoItem = document.createElement('div');
-            novoItem.classList.add('item-menu');
+            function adicionarAoMenu(item,  imagemSrc) {
+                const menuEscolhido = document.getElementById('menu-escolhido');
+                const novoItem = document.createElement('div');
+                novoItem.classList.add('item-menu');
 
-            const nomeItem = document.createElement('p');
-            nomeItem.textContent = item;
+                const nomeItem = document.createElement('h1');
+                nomeItem.textContent = item;
 
-            const botaoRemover = document.createElement('button');
-            botaoRemover.textContent = 'Remover';
-            botaoRemover.addEventListener('click', function () {
+                const imagemItem = document.createElement('img');
+                  imagemItem.src = imagemSrc;
+                  imagemItem.width = 200;
+                  imagemItem.height = 150;  
+
+                const botaoRemover = document.createElement('button');
+                botaoRemover.textContent = 'Remover';
+                botaoRemover.addEventListener('click', function () {
                 menuEscolhido.removeChild(novoItem);
-            });
-
-            novoItem.appendChild(nomeItem);
-            novoItem.appendChild(botaoRemover);
-            menuEscolhido.appendChild(novoItem);
-        }   
-    </script>
+                });
+                
+                novoItem.appendChild(imagemItem);
+                novoItem.appendChild(nomeItem);
+                novoItem.appendChild(botaoRemover);
+                menuEscolhido.appendChild(novoItem);
+            }   
+        </script>
 </body>
 </html>
